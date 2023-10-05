@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="start">CSS only accordion, pretty accessible</h1>
+
+      <label for="tota11y-open-close">Открыть все секции?</label>
+      <input type="checkbox" id="tota11y-open-close" />
+      <ul class="tota11y-accordion" aria-label="FAQs accordion">
+        <li>
+          <a href="#acc1" data-target="acc1">Список номер 1, без скрола</a>
+          <section
+            class="content"
+            id="acc1"
+            tabindex="0"
+            aria-labelledby="accLink1"
+           
+          >
+            <ul>
+              <li><a href="#start">Первый</a></li>
+              <li>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                eum nihil aliquid doloribus corporis sapiente optio, similique
+                enim officiis voluptas neque non magnam nulla, dolorem iste.
+                Eaque ex fugit a.
+              </li>
+            </ul>
+          </section>
+        </li>
+        <li>
+          <a href="#acc2" data-target="acc2"
+            >Список номер 2, с скролом</a
+          >
+          <section
+            class="content"
+            id="acc2"
+            tabindex="0"
+            aria-labelledby="accLink2"
+          >
+            <ul>
+              <li><a href="#start">Второй аккордион</a></li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                assumenda debitis excepturi fugit. Impedit quam dolore eligendi
+                illo, harum obcaecati facilis. Eaque error incidunt illum
+                debitis obcaecati quas similique quod!
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo repudiandae consequuntur temporibus aperiam nihil
+                ullam laudantium eveniet dolore. Velit odit ipsum impedit
+                nesciunt facere doloremque et unde sapiente, magnam voluptates.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo repudiandae consequuntur temporibus aperiam nihil
+                ullam laudantium eveniet dolore. Velit odit ipsum impedit
+                nesciunt facere doloremque et unde sapiente, magnam voluptates.
+              </li>
+            </ul>
+          </section>
+        </li>
+        <li>
+          <a href="#acc3" data-target="acc3"
+            >Список номер 3, большой и со скролом</a
+          >
+          <section
+            class="content"
+            id="acc3"
+            tabindex="0"
+            aria-labelledby="accLink3"
+          >
+            <ul>
+              <li><a href="#start">Поздравляю вы дошли до конца</a></li>
+              <li>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Eveniet similique nemo adipisci sapiente dolorum? Assumenda
+                ducimus eligendi quos, dolore, soluta accusamus dicta similique
+                nihil exercitationem, cumque officia alias quibusdam non.
+              </li>
+              <li>Item</li>
+              <li>Item</li>
+              <li>Item</li>
+              <li>Item</li>
+              <li>Item</li>
+              <li>Item</li>
+              <li>Item</li>
+            </ul>
+          </section>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
